@@ -1,0 +1,125 @@
+% Compile with pdfLaTeX. This file is self-contained and works in Overleaf.
+% Review before submission:
+% 1. Confirm Mytel end year (2024 is retained from earlier CV context).
+% 2. Confirm current contact details, earlier qualifications and employment dates.
+% 3. Add your own LinkedIn and portfolio URLs when verified.
+% 4. Retain project bullets only for work you personally completed and can explain.
+% 5. Change the target line and summary for each position; keep official job titles.
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=18mm,top=16mm,bottom=17mm]{geometry}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage[hidelinks,unicode]{hyperref}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{ink}{HTML}{172A3A}
+\hypersetup{pdftitle={Hsiu-Fang Hsu - Business Analytics CV},pdfauthor={Hsiu-Fang Hsu},pdfsubject={Business analytics internship and industry placement}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{2em}
+\titleformat{\section}{\large\bfseries\color{ink}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{12pt}{5pt}
+\setlist[itemize]{leftmargin=15pt,itemsep=3.5pt,topsep=4pt,parsep=0pt,label=\textbullet}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{gray} Hsiu-Fang Hsu}
+\fancyfoot[R]{\footnotesize\color{gray}\thepage/2}
+\newcommand{\mytelend}{2024}
+\newcommand{\role}[3]{\textbf{#1}\hfill #2\par\textit{#3}\par}
+\newcommand{\skill}[2]{\textbf{#1} #2\par}
+\begin{document}
+{\fontsize{26}{30}\selectfont\bfseries\color{ink} HSIU-FANG HSU}\par
+\vspace{3pt}
+{\large Business Analytics \textbar{} Data and Reporting \textbar{} Industry Placement}\par
+Melbourne, VIC \textbar{} \href{tel:+61426162340}{0426 162 340} \textbar{}
+\href{mailto:hsu.hsiufang.hhf@gmail.com}{hsu.hsiufang.hhf@gmail.com}
+
+\section{Professional Summary}
+
+\begin{itemize}
+
+\item Master of Business Analytics candidate at La Trobe University, undertaking postgraduate study in analytics, AI and cloud platforms.
+\item Telecommunications store-channel leadership experience, coordinating store teams and channel partners.
+\item Experience analyzing sales performance, monitoring KPIs and preparing management reports.
+\item Commercial understanding, stakeholder communication skills and experience with \textbf{Excel and Power BI.}
+\item Seeking a business analytics, reporting or business analyst industry placement in Semester 1, 2027.
+\end{itemize}
+\section{Core Skills}
+\skill{Business analytics:}{Sales performance analysis, KPI monitoring, trend analysis, management reporting and budget monitoring.}
+\skill{Reporting tools:}{Microsoft Excel, Power BI, SPSS and PowerPoint.}
+\skill{Academic tools:}{Azure Data Factory, Azure SQL and Databricks through cloud analytics coursework; foundational SQL and Python.}
+\skill{Business delivery:}{Stakeholder coordination, presentations, team leadership, training, operational planning and customer service.}
+
+\section{Professional Experience}
+\role{Head of Division -- Store Channel}{2021--\mytelend}{Telecom International Myanmar (Mytel) \textbar{} Myanmar}
+\begin{itemize}
+\item Analyzed store-channel sales data and performance metrics to evaluate sales initiatives, identify trends and recommend actions to senior management.
+\item Set sales targets and monitored store and team performance against revenue and customer service objectives.
+\item Prepared management reports summarizing achievements, operational challenges and recommended actions to support commercial decisions.
+\item Reviewed market trends, customer preferences and competitor activity to inform sales planning and identify opportunities for expansion.
+\item Coordinated store managers, sales teams, franchisees and distributors; provided training and performance feedback to support channel operations.
+\item Managed division budgets, cost controls and resource allocation to support operational efficiency and profitability objectives.
+\end{itemize}
+
+\vspace{3pt}
+\role{Store Channel Coordinator}{2019--2021}{Telecom International Myanmar (Mytel) \textbar{} Myanmar}
+\begin{itemize}
+\item Monitored sales data, customer feedback and competitor activity; prepared reports on store performance and improvement opportunities.
+\item Supported store managers and channel partners through product training, promotional coordination and operational guidance.
+\item Coordinated stock availability, customer enquiries and daily store operations while maintaining company policies and service standards.
+\end{itemize}
+
+\newpage
+\section{Education}
+\textbf{Master of Business Analytics}\hfill Aug 2025--Present\par
+La Trobe University \textbar{} Melbourne, Australia\par
+Expected completion: 2027\par
+% \textbf{Selected results:} Vibe Coding for Startups (83/100); Principles of Business Analytics (76/100); Artificial Intelligence for Business (72/100); Data Wrangling (72/100); Predictive Analytics (71/100).\par
+% \textbf{Current study -- Semester 2, 2026:} Cloud Platforms and Analytics; Managing IT Projects; Artificial Intelligence and Hyperautomation; Responsible AI for Sustainability.\par
+% \textbf{Enrolled for Semester 1, 2027:} Industry Placement (LTU5IND); Analytics Capstone; Data Warehousing and Big Data Analytics.
+
+\vspace{7pt}
+\textbf{Master of Business Administration}\hfill 2016--2018\par
+Yangon University of Economics \textbar{} Yangon, Myanmar
+
+\vspace{5pt}
+\textbf{Bachelor of Business Management}\hfill 2011--2015\par
+Yangon University of Economics \textbar{} Yangon, Myanmar
+
+\section{Selected Academic Projects}
+\textbf{Melbourne Pedestrian Data Pipeline and Reporting}\hfill 2026\par
+\textit{Cloud Platforms and Analytics \textbar{} Azure Data Factory, Azure SQL, Power BI}
+\begin{itemize}
+\item Developed a cloud analytics workflow for Melbourne pedestrian movement data, connecting data preparation and storage with reporting in Power BI.
+\item Prepared hourly pedestrian measures, including counts, observation counts and variability, to support comparisons across locations and time periods.
+\item Documented the pipeline and analytical outputs to explain data processing and business interpretation.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{NYC Taxi Data Analysis}\hfill 2026\par
+\textit{Cloud Platforms and Analytics \textbar{} Databricks}
+\begin{itemize}
+\item Analyzed taxi trip data in Databricks as part of a postgraduate cloud analytics assessment.
+\item Applied data cleaning and compared trip and fare patterns, presenting analytical findings and limitations in the assessment report.
+\end{itemize}
+
+\section{Earlier Experience}
+\role{Assistant Finance and Admin -- Internship}{2018--2019}{WaterAid Myanmar \textbar{} Myanmar}
+\begin{itemize}
+\item Maintained financial records, receipts and invoices; supported salary payments, vendor payments and expense reimbursements under financial controls.
+\item Assisted with procurement documentation, quotations, purchase orders, meetings and travel arrangements.
+\end{itemize}
+
+\section{Recognition}
+\textbf{Innovation Award}\hfill 2021\par
+Telecom International Myanmar (Mytel)
+\end{document}
