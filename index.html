@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hsiu-Fang Hsu | Business Analytics</title>
-<meta name="description" content="Hsiu-Fang Hsu – Master of Business Analytics candidate at La Trobe University, Melbourne, with five years of telecom sales-channel leadership. Seeking a business analytics or business analyst industry placement for Semester 1, 2027.">
+<meta name="description" content="Hsiu-Fang Hsu – Master of Business Analytics candidate at La Trobe University, Melbourne, and Microsoft Certified Power BI Data Analyst Associate, with five years of telecom sales-channel leadership. Seeking a business analytics or business analyst industry placement for Semester 1, 2027.">
 <meta name="author" content="Hsiu-Fang Hsu">
-<meta name="keywords" content="Hsiu-Fang Hsu, business analytics, business analyst, Power BI, Excel, SQL, Azure, Melbourne, La Trobe University, industry placement">
-<link rel="canonical" href="https://hsiufang.github.io/">
+<meta name="keywords" content="Hsiu-Fang Hsu, business analytics, business analyst, Power BI, Microsoft Certified Power BI Data Analyst Associate, PL-300, Excel, SQL, Azure, Melbourne, La Trobe University, industry placement">
+<link rel="canonical" href="https://hsiufangg.github.io/">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Hsiu-Fang Hsu | Business Analytics">
-<meta property="og:description" content="Master of Business Analytics candidate in Melbourne with telecom sales-channel leadership experience. Open to industry placement, Semester 1 2027.">
-<meta property="og:url" content="https://hsiufang.github.io/">
-<meta property="og:image" content="https://hsiufang.github.io/assets/profile.jpg">
+<meta property="og:description" content="Master of Business Analytics candidate in Melbourne and Microsoft Certified Power BI Data Analyst Associate, with telecom sales-channel leadership experience. Open to industry placement, Semester 1 2027.">
+<meta property="og:url" content="https://hsiufangg.github.io/">
+<meta property="og:image" content="https://hsiufangg.github.io/assets/profile.jpg">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#172A3A">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -31,7 +31,13 @@
     {"@type": "CollegeOrUniversity", "name": "La Trobe University"},
     {"@type": "CollegeOrUniversity", "name": "Yangon University of Economics"}
   ],
-  "knowsAbout": ["Business analytics", "Power BI", "Microsoft Excel", "SQL", "Azure Data Factory", "Databricks", "KPI reporting"],
+  "knowsAbout": ["Business analytics", "Power BI", "Power BI dashboards", "Microsoft Excel", "SQL", "Azure Data Factory", "Databricks", "KPI reporting", "Competitor pricing analysis"],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Microsoft Certified: Power BI Data Analyst Associate",
+    "credentialCategory": "certification",
+    "recognizedBy": {"@type": "Organization", "name": "Microsoft"}
+  },
   "sameAs": ["https://www.linkedin.com/in/hsiu-fang-hsu-4ba78712b"]
 }
 </script>
@@ -101,6 +107,9 @@ nav.links .btn:hover{color:#fff}
 .status{display:flex;align-items:flex-start;gap:12px;margin:0 0 30px;padding:14px 16px;border-left:3px solid var(--amber);background:var(--surface);max-width:60ch;border-radius:0 6px 6px 0}
 .status strong{color:var(--ink);font-weight:600}
 .actions{display:flex;flex-wrap:wrap;gap:12px}
+.cred{display:inline-flex;align-items:center;gap:10px;margin:0 0 22px;padding:7px 15px 7px 9px;border:1px solid var(--rule);border-radius:999px;background:var(--surface);color:var(--ink);text-decoration:none;font-size:15px;font-weight:500;line-height:1.3}
+.cred svg{width:24px;height:24px;flex:none;color:var(--teal)}
+.cred:hover{border-color:var(--teal)}
 .portrait{width:300px;height:300px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 8px var(--surface),0 0 0 9px var(--rule)}
 
 /* Timeline (Gantt) */
@@ -161,6 +170,13 @@ h3{font-family:var(--serif);font-weight:600;color:var(--ink);font-size:21px;line
 .entry li{margin:0 0 7px}
 .entry li::marker{color:var(--teal)}
 
+/* Certification */
+.cert{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--teal);border-radius:10px;padding:26px 28px}
+.cert-badge{width:76px;height:76px;color:var(--teal)}
+.cert .org{margin:4px 0 16px}
+.cert-areas{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.cert-areas li{background:var(--teal-soft);color:var(--ink);font-size:14px;line-height:1.3;padding:6px 12px;border-radius:999px}
+.cert p:last-child{margin:0;font-size:16px}
 .edu-list{display:grid;gap:22px}
 .edu-item{display:grid;grid-template-columns:1fr auto;gap:2px 16px}
 .edu-item p{margin:0;color:var(--muted);grid-column:1 / -1}
@@ -193,6 +209,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   .wrap{padding:0 16px}
   .panel{padding:20px 16px 16px}
   .gantt{--label:0px}
+  .cert{grid-template-columns:1fr;gap:14px;padding:20px 18px}
+  .cert-badge{width:56px;height:56px}
+  .cred{font-size:14px}
   .axis,.row{grid-template-columns:1fr;row-gap:6px}
   .axis .lbl-spacer{display:none}
   .gridlines{display:none}
@@ -219,6 +238,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     <a class="brand" href="#">Hsiu-Fang Hsu</a>
     <nav class="links" aria-label="Main">
       <a href="#about">About</a>
+      <a href="#certification">Certification</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
@@ -234,7 +254,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
       <div>
         <h1>Hsiu-Fang Hsu</h1>
         <p class="role">Business analytics, data and reporting</p>
-        <p class="intro">I turn sales and operational data into reports that managers can act on. I&rsquo;m completing a Master of Business Analytics at La Trobe University in Melbourne, after five years leading store-channel performance at a national telecommunications operator.</p>
+        <a class="cred" href="#certification">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 21 7v10l-9 5-9-5V7Z" style="fill:var(--teal-soft)"/><path d="m8 12.5 3 3 5-6"/></svg>
+          Microsoft Certified: Power BI Data Analyst Associate
+        </a>
+        <p class="intro">I turn sales and operational data into Power BI dashboards and reports that managers can act on. I&rsquo;m completing a Master of Business Analytics at La Trobe University in Melbourne, after five years leading store-channel performance at a national telecommunications operator.</p>
         <p class="status"><span><strong>Open to an industry placement in Semester 1, 2027</strong> &ndash; business analytics, reporting or business analyst roles in Melbourne.</span></p>
         <div class="actions">
           <a class="btn btn-primary" href="cv.pdf" download="Hsiu-Fang-Hsu-CV.pdf">
@@ -318,14 +342,38 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     <div class="wrap">
       <h2 id="about-title">About</h2>
       <div class="content">
-        <p>At Telecom International Myanmar (Mytel), I moved from coordinating store operations to heading the store-channel division. The work ran on numbers: analysing sales performance, setting targets, monitoring KPIs and writing the management reports that shaped commercial decisions. I also coordinated store managers, franchisees and distributors, so I&rsquo;m used to explaining data to people who need to act on it.</p>
+        <p>At Telecom International Myanmar (Mytel), I moved from coordinating store operations to heading the store-channel division. The work ran on numbers: building Power BI dashboards for directors and C-level executives, analysing sales performance and sales quality, benchmarking our prices against competitors, setting targets and writing the management reports that shaped commercial decisions. I also coordinated store managers, franchisees and distributors, so I&rsquo;m used to explaining data to people who need to act on it.</p>
         <p>I&rsquo;m now building the technical side in Melbourne through postgraduate study in analytics, AI and cloud platforms, working with Power BI, Azure Data Factory, Azure SQL and Databricks.</p>
         <dl class="skills">
-          <div><dt>Business analytics</dt><dd>Sales performance analysis, KPI monitoring, trend analysis, management reporting and budget monitoring.</dd></div>
-          <div><dt>Reporting tools</dt><dd>Microsoft Excel, Power BI, SPSS and PowerPoint.</dd></div>
+          <div><dt>Analytics and reporting</dt><dd>Power BI dashboards, sales performance analysis, KPI monitoring, sales quality reporting, competitor pricing analysis and management reporting.</dd></div>
+          <div><dt>Business tools</dt><dd>Microsoft Excel, Power BI, SPSS and PowerPoint.</dd></div>
           <div><dt>Data and cloud</dt><dd>Azure Data Factory, Azure SQL and Databricks through coursework; foundational SQL and Python.</dd></div>
-          <div><dt>Business delivery</dt><dd>Stakeholder coordination, presentations, team leadership, training and operational planning.</dd></div>
+          <div><dt>Business delivery</dt><dd>Executive reporting, stakeholder coordination, presentations, team leadership, training, budget monitoring and operational planning.</dd></div>
         </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="certification" aria-labelledby="cert-title">
+    <div class="wrap">
+      <h2 id="cert-title">Certification</h2>
+      <div class="content">
+        <article class="cert">
+          <svg class="cert-badge" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 4 56 18v28L32 60 8 46V18Z" style="fill:var(--teal-soft)"/><path d="M32 12 49 22v20L32 52 15 42V22Z"/><path d="m23 32.5 6.5 6.5L42 25.5"/></svg>
+          <div>
+            <h3>Microsoft Certified: Power BI Data Analyst Associate</h3>
+            <p class="org">Issued by Microsoft &middot; Exam PL-300</p>
+            <ul class="cert-areas" aria-label="Skills validated">
+              <li>Prepare data</li>
+              <li>Model data</li>
+              <li>Visualise and analyse data</li>
+              <li>Manage and secure Power BI</li>
+            </ul>
+            <p>Backed by practice: at Mytel I built the Power BI dashboards directors and C&#8209;level executives used to track sales performance, SIM registrations and activations, and sales quality across nationwide branches.</p>
+            <!-- To add a verification link, paste your Microsoft Learn or Credly credential URL here, e.g.
+                 <p><a href="YOUR-CREDENTIAL-URL" target="_blank" rel="noopener">Verify credential</a></p> -->
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -338,12 +386,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
           <div class="entry-head"><h3>Head of Division, Store Channel</h3><span class="when">2021&ndash;2024</span></div>
           <p class="org">Telecom International Myanmar (Mytel), Myanmar</p>
           <ul>
-            <li>Analysed store-channel sales data and performance metrics to evaluate sales initiatives, identify trends and recommend actions to senior management.</li>
-            <li>Set sales targets and monitored store and team performance against revenue and customer-service objectives.</li>
-            <li>Prepared management reports summarising achievements, operational challenges and recommended actions.</li>
-            <li>Reviewed market trends, customer preferences and competitor activity to inform sales planning and find expansion opportunities.</li>
+            <li>Developed Power BI dashboards for department and branch directors and C-level executives to monitor sales performance, SIM registrations and activations, and sales quality across nationwide branches.</li>
+            <li>Benchmarked selling prices and discounts across wholesale and DTR channels against competitors&rsquo; market prices to support senior management decisions on pricing and discount strategy.</li>
+            <li>Analysed store-channel sales data and KPIs to evaluate sales initiatives, identify trends and recommend actions to senior management.</li>
+            <li>Set sales targets and monitored store and team performance against revenue and customer-service objectives; reported progress, operational challenges and recommended actions.</li>
             <li>Coordinated store managers, sales teams, franchisees and distributors, providing training and performance feedback.</li>
-            <li>Managed division budgets, cost controls and resource allocation.</li>
+            <li>Managed division budgets, cost controls and resource allocation to support efficiency and profitability.</li>
           </ul>
         </article>
         <article class="entry">
@@ -360,7 +408,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
           <p class="org">WaterAid Myanmar, Myanmar</p>
           <ul>
             <li>Maintained financial records, receipts and invoices; supported salary, vendor and reimbursement payments under financial controls.</li>
-            <li>Assisted with procurement documentation, quotations and purchase orders.</li>
+            <li>Assisted with procurement documentation, quotations, purchase orders, meetings and travel arrangements.</li>
           </ul>
         </article>
       </div>
@@ -377,7 +425,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
           <ul>
             <li>Built a cloud analytics workflow for Melbourne pedestrian movement data, connecting data preparation and storage to Power BI reporting.</li>
             <li>Prepared hourly measures including counts, observation counts and variability to compare locations and time periods.</li>
-            <li>Documented the pipeline and outputs to explain data processing and business interpretation.</li>
           </ul>
         </article>
         <article class="entry">
@@ -394,7 +441,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 
   <section class="block" id="education" aria-labelledby="edu-title">
     <div class="wrap">
-      <h2 id="edu-title">Education and awards</h2>
+      <h2 id="edu-title">Education and recognition</h2>
       <div class="content edu-list">
         <div class="edu-item"><h3>Master of Business Analytics</h3><span class="when">Aug 2025&ndash;2027</span><p>La Trobe University, Melbourne</p></div>
         <div class="edu-item"><h3>Master of Business Administration</h3><span class="when">2016&ndash;2018</span><p>Yangon University of Economics, Myanmar</p></div>

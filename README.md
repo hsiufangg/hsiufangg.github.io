@@ -1,6 +1,6 @@
 # Hsiu-Fang Hsu — Business Analytics portfolio
 
-Personal website: https://hsiufang.github.io
+Personal website: https://hsiufangg.github.io
 
 A single-page static site (no build step) hosted on GitHub Pages.
 
